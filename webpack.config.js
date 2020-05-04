@@ -12,7 +12,10 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.css$/i, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'], // from last to first
+      },
     ],
   },
   plugins: [
