@@ -1,5 +1,9 @@
-require('./main.css');
+import Vue from 'vue';
 
-const show = require('./show.js');
+import App from './src/App.vue';
 
-show('Webpack');
+new Vue({
+  render: (h) => h(App),
+}).$mount('#app');
+
+console.log('qwe');
